@@ -4,30 +4,39 @@
 <meta charset="utf-8">
 <title>Panasovska Yulia</title>
 <link rel="icon" type="image/png" href="img/icon.png">
-<link rel="stylesheet"  type="text/css" href="styles.css">
-<link rel="stylesheet"  type="text/css" href="mobstyles.css">
+ <link rel="stylesheet"  type="text/css" href="styles.css">
+ <link rel="stylesheet"  type="text/css" href="mobstyles.css">
 <link rel="stylesheet"  type="text/css" href="animate.min.css">
 <meta name="viewport" content="width=680, initial-scale=1">
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
 <script type="text/javascript" src="js/jquery.activechange.js"></script>
 <script type="text/javascript" src="js/jquery.form.js"></script>
-
-
-
  <script type="text/javascript">
    jQuery(function($){
    $(".phone").mask("+38(999) 999-9999");
    });
 </script>
 
+<style>
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)   {
+.grid {
+  display: none;
+}
 
+#ie::after {
+  content: "Для просмотра сайта используйте, пожалуйста, другой браузер";
+}
+
+.cbalink {
+	background-color: #fff;
+	margin: 0;
+}
+}
+</style>
 
 </head>
 <body>
-
-
-
 <div id="ie"></div>
 <div class="grid">
 <nav class="sticky top-menu" id="menu">

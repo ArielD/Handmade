@@ -12,7 +12,7 @@ function callCons() {
       $("body").addClass("stop-scrolling").removeClass("start-scrolling");
           },
           error:  function(xhr, str){
-	    alert('�������� ������: ' + xhr.responseCode);
+	    alert('Error: ' + xhr.responseCode);
           }
         });
     }
@@ -30,7 +30,7 @@ function callCons() {
     $("body").addClass("stop-scrolling").removeClass("start-scrolling");
           },
           error:  function(xhr, str){
-	    alert('�������� ������: ' + xhr.responseCode);
+	    alert('Error: ' + xhr.responseCode);
           }
         });
     }
@@ -48,7 +48,7 @@ function callCons() {
       $("body").addClass("stop-scrolling").removeClass("start-scrolling");
           },
           error:  function(xhr, str){
-	    alert('�������� ������: ' + xhr.responseCode);
+	    alert('Error: ' + xhr.responseCode);
           }
         });
     }
