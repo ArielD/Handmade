@@ -1,12 +1,5 @@
-@media screen and (max-width: 680px) {
+@media screen and (min-width:240px) and (max-width:760px) {
 
-:root {
-	--scarlet-medium: #701e21;
-	--scarlet-light: #9c2e31;
-	--white: #fff;
-	--black: #000;
-	--font-russo: 'Russo One', sans-serif;
-}
 
 body,html {
 	margin: 0;
@@ -75,25 +68,14 @@ header.grid-header {
 .grid {
 	display: flex;
 	flex-wrap: wrap;
+	width: 100%;
+	justify-content: center;
 }
+
 .social {
 	display: none;
 }
-.social a {
 
-}
-
-
-
-.social .facebook {background-position: 0 0px;}
-.social .vk {background-position: 0 -26px;}
-.social .insta {background-position: 0 -51px;}
-.social .google {background-position: 0 -77px;}
-.social .twitter {background-position: 0 -103px;}
-
-.mail, .telephone {
-	margin-top: 5px;
-}
 
 /* ----------------- GRID NAV --------------------- */
 
@@ -118,8 +100,9 @@ header.grid-header {
 #menu {
 	display: block;
 	width: 100%;
-margin-top: 0px;
+	margin-top: 0px;
 }
+
 .item-nav {
 	padding: 5px;
 	text-align: center;
@@ -141,7 +124,6 @@ nav {
 }
 
 .sticky {
-
 	top: 0px;
 }
 
@@ -170,6 +152,7 @@ nav a.active {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	width: 100%;
 
 }
 
@@ -252,13 +235,13 @@ display: block;
 	padding: 0px;
 	background: #701e21;
 	position: relative;
-    padding-top: 20px;
-    padding-bottom: 10px;
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 
 .wrap-for-circles {
 	display: flex;
-    flex-wrap: nowrap;
+  flex-wrap: nowrap;
 	z-index: 2;
 	position: relative;
 	justify-content: center;
@@ -282,7 +265,7 @@ display: block;
 	color: #fff;
 	text-align: center;
 	margin: 10px;
-	font-size: 14pt;
+	font-size: 15pt;
 	font-family: 'Russo One', sans-serif;
 	opacity: 0.95;
 	font-weight: 100;
@@ -295,11 +278,9 @@ display: block;
 	background-image: url(img/circle.png);
 	background-repeat: no-repeat;
 	background-position: top center;
-	-webkit-flex-basis: 270px;
-	flex-basis: 270px;
-
-
-
+	/*-webkit-flex-basis: 200px;
+	flex-basis: 200px;*/
+	transform: scale(0.9);
 }
 
 .grid-circles-img img {
@@ -1144,7 +1125,7 @@ text-align: center;
 .footer-social a {
 	display: inline-flex;
 	text-decoration: none;
-	background-image: url('img/social1.svg');
+	background-image: url('img/social.svg');
 	background-repeat: no-repeat;
 	background-size: 62px auto;
 	padding: 2px 0 2px 0px;
@@ -1259,4 +1240,239 @@ text-align: center;
 	color: #000;
 	text-decoration: none;
 }
+}
+
+@media screen and (min-width:320px) and (max-width:480px) {
+
+	.item-nav {
+		padding: 5px;
+		text-align: center;
+		color: #fff;
+		text-transform: uppercase;
+		font-size: 11pt;
+		display: inline-block;
+		font-family: 'Russo One', sans-serif;
+		margin-left: 3px;
+		margin-right: 3px;
+	}
+}
+
+
+@media screen and (max-width:500px) {
+
+	.item-nav {
+		padding: 5px;
+		text-align: center;
+		color: #fff;
+		text-transform: uppercase;
+		font-size: 10pt;
+		display: inline-block;
+		font-family: 'Russo One', sans-serif;
+		margin-left: 3px;
+		margin-right: 3px;
+	}
+
+	#logo {
+		background-color: rgba(0,0,0, 0.7);
+		margin: 0;
+		text-align: center;
+		margin: 0;
+		color: #fff;
+		font-size: 20pt;
+		font-family: 'Great Vibes', cursive;
+		height: 50px;
+		z-index: 999;
+		padding: 10px;
+		letter-spacing: 3px;
+	}
+
+	.order-block button {
+		display: block;
+		padding: 0px;
+		width: 200px;
+		height: 70px;
+		position: relative;
+		margin: auto;
+		background-color: #9c2e31;
+		color: #fff;
+		border: 0;
+		font-family: 'Volkhov', serif;
+		text-transform: uppercase;
+		font-size: 25pt;
+		font-weight: 200;
+		text-shadow: 1px 1px 1px #1a1a1a;
+	}
+
+	.grid-review {
+		background-color: #fff;
+		margin-top: 30px;
+	}
+
+	.review-header {
+		font-size: 24pt;
+		text-align: center;
+		text-transform: uppercase;
+		margin: 30px;
+		color: #333333;
+		font-family: 'Russo One', sans-serif;
+	}
+
+	.grid-review-block {
+
+	}
+
+	.grid-review-block-left-first,
+	.grid-review-block-left-second {
+		display: flex;
+		flex-wrap: wrap;
+	  justify-content: center;
+		padding-right: 10px;
+		margin-bottom: 10px;
+	  padding-left: 5px;
+	}
+
+	.grid-review-block-right-first {
+
+		padding-left: 5px;
+		margin-bottom: 10px;
+		display: flex;
+		flex-wrap: wrap;
+	  justify-content: center;
+		padding-right: 10px;
+	}
+
+	.review-image {
+	margin: 0px;
+
+	}
+
+	.review-image-right {
+		order:-1;
+		margin-left: 0;
+	}
+
+
+	.review-image img {
+		border-radius: 100px;
+		height: 115px;
+	}
+
+
+	.review-comment {
+		display: block;
+	}
+
+	.review-comment p {
+		padding: 5px;
+		margin: 0;
+	}
+
+	.review-comment .review-name {
+		font-weight: bold;
+		padding: 0;
+		text-transform: uppercase;
+		font-size: 15pt;
+	        margin-left: 20px;
+
+	}
+
+	.review-comment .review-date {
+		padding: 0;
+		margin-top: 0px;
+		color: #4d4d4d;
+		font-size: 15pt;
+	    margin-right: 20px;
+
+	}
+
+	.review-button button {
+		display: block;
+		margin: auto;
+		height: 70px;
+		width: 220px;
+		margin-top: 40px;
+		margin-bottom: 40px;
+		color: #fff;
+		background-color: #9c2e31;
+		border: 0;
+		font-size: 20pt;
+		font-family: 'Volkhov', serif;
+		text-transform: uppercase;
+		text-shadow: 1px 1px 1px #1a1a1a;
+
+	}
+
+
+	button.review-form-element {
+		position: absolute;
+		top: 100%;
+		background-color: #701e21;
+		color: #fff;
+		font-size: 32pt;
+		font-family: 'Volkhov', serif;
+		text-transform: uppercase;
+		text-shadow: 1px 1px 1px #1a1a1a;
+		width: 300px;
+		height: 70px;
+
+	}
+
+	.consultation-form-element {
+		margin: 5px 10px;
+		height: 70px;
+		width: 250px;
+	}
+
+	.grid-consultation-form button {
+		background-color: #701e21;
+		color: #fff;
+		border: 0;
+		font-size: 20pt;
+		font-family: 'Volkhov', serif;
+		text-transform: uppercase;
+		text-shadow: 1px 1px 1px #1a1a1a;
+		width: 250px;
+		height: 70px;
+	}
+	.grid-gallery {
+		background-color: #fffbff;
+		display: block;
+		flex-wrap: nowrap;
+		justify-content: center;
+	}
+
+	.grid-gallery-element {
+	 flex-basis: 330px
+	}
+
+	.grid-gallery-element img {
+		width: 100px;
+		height: auto;
+	}
+}
+@media screen and (max-width:660px) {
+	.wrap-for-circles {
+		display: flex;
+	  flex-wrap: wrap;
+		z-index: 2;
+		position: relative;
+		justify-content: center;
+
+	}
+	#logo {
+		font-size: 28pt;
+		letter-spacing: 1px;
+	}
+}
+
+@media screen and (max-width:470px) {
+
+	#logo {
+		font-size: 20pt;
+	}
+
+	.item-nav {
+		font-size: 8pt;
+
+	}
 }

@@ -93,7 +93,7 @@ header.grid-header {
 .social a {
 	display: inline-flex;
 	text-decoration: none;
-	background-image: url('img/social1.svg');
+	background-image: url('img/social.svg');
 	background-repeat: no-repeat;
 	background-size: 27px auto;
 	padding: 2px 0 2px 0px;
@@ -1127,7 +1127,7 @@ input[type="text"]::-moz-placeholder {
 .footer-social a {
 	display: inline-flex;
 	text-decoration: none;
-	background-image: url('img/social1.svg');
+	background-image: url('img/social.svg');
 	background-repeat: no-repeat;
 	background-size: 27px auto;
 	padding: 2px 0 2px 0px;
