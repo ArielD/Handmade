@@ -1,0 +1,61 @@
+
+{
+
+         "selty":{
+             "name": "Selty",
+              "small_url": "img/small_overalls.jpg",
+              "url": "primer",
+              "date": "00.00.00",
+              "description": "Текст текст текст",
+              "id": "1",
+              "pic": "9"
+
+      },
+
+         "naruto":{
+             "name": "Naruto",
+              "small_url": "img/small_overalls.jpg",
+              "url": "primer",
+              "date": "00",
+              "description": "",
+              "id": "2",
+              "pic": "10"
+         },
+         "izaya":{
+             "name": "izaya",
+              "small_url": "img/small_overalls.jpg",
+              "url": "primer",
+              "date": "00",
+              "description": "",
+              "id": "3",
+              "pic": "11"
+         },
+         "shizou":{
+             "name": "shizou",
+              "small_url": "img/small_overalls.jpg",
+              "url": "primer",
+              "date": "00",
+              "description": "",
+              "id": "4",
+              "pic": "12"
+         },
+         "natsu":{
+             "name": "natsu",
+              "small_url": "img/small_overalls.jpg",
+              "url": "primer",
+              "date": "00",
+              "description": "",
+              "id": "5",
+              "pic": "13"
+         },
+         "lucy":{
+             "name": "lucy",
+              "small_url": "img/small_overalls.jpg",
+              "url": "primer",
+              "date": "00",
+              "description": "",
+              "id": "6",
+              "pic": "14"
+         }
+
+}

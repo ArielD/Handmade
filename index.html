@@ -19,6 +19,79 @@
    });
 </script>
 
+<script type="text/javascript">
+$(document).ready(function(){
+   $("#imgLoad").hide();  //Скрываем прелоадер
+});
+var num = 4; //чтобы знать с какой записи вытаскивать данные
+$(function() {
+   $("#load div").click(function(){ //Выполняем если по кнопке кликнули
+   $("#imgLoad").show(); //Показываем прелоадер
+   $.ajax({
+          url: "galleryPick.php",
+          type: "POST",
+          data: {"num": num},
+          cache: false,
+          success: function(response){
+              if(response == 0){  // смотрим ответ от сервера и выполняем соответствующее действие
+                 alert("Больше нет записей");
+                 $("#imgLoad").hide();
+              }else{
+                // $("#content").empty()
+                 $("#gallery").append(response);
+                 num = num + 4;
+                 $("#imgLoad").hide();
+              }
+           }
+        });
+
+        // $.ajax({
+        //        url: "galleryPick.php",
+        //        type: "POST",
+        //        data: {"num": num},
+        //        cache: false,
+        //        success: function(response){
+        //            if(response == 0){  // смотрим ответ от сервера и выполняем соответствующее действие
+        //               alert("Больше нет записей");
+        //               $("#imgLoad").hide();
+        //            }else{
+        //               $("#content").append(response);
+        //               num = num + 5;
+        //               $("#imgLoad").hide();
+        //            }
+        //         }
+        //      });
+    });
+});
+</script>
+<style type="text/css">
+
+/*.commentBlock{
+  width:500px;
+  margin: 10px auto;
+  border-bottom:1px solid #999;
+}
+.name{
+  font-weight:700;
+}
+#load{
+  width:120px;
+  height:30px;
+  text-align:center;
+  margin: 10px auto;
+}
+#load div{
+   margin: 5px;
+   cursor:pointer;
+   background: #6483aa;
+   color:#fff;
+   padding: 4px 10px 4px 10px;
+   border:1px solid #2f4561;
+   -webkit-border-radius: 2px;
+   -moz-border-radius: 2px;
+   border-radius: 2px;
+}*/
+</style>
 
 <style>
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)   {
@@ -206,7 +279,16 @@
 </figcaption>
 </figure>
 </label>
+ <!-- <div id="content">
+
+</div> -->
+
 </div>
+<div id="load">
+<div>Загрузить еще</div>
+<img src="loading.gif" id="imgLoad">
+</div>
+
 
 <div>
 <input type="checkbox" id="pic-1"/>
@@ -226,6 +308,7 @@
 <input type="checkbox" id="pic-8"/>
 <label for="pic-8" class="lightbox"><div class="bg"> <img src="img/laxus.jpg"/> </div></label>
 </div>
+
 <div class="grid-order" id="order">
 <div class="bg-for-order"></div>
 <div class="order-header">Заказать работу</div>
