@@ -15,7 +15,7 @@ foreach($output as $key => $one)
   <div>
   	<h2>'.$one['name'].'</h2>
   	<p class="date"> '.$one['date'].'</p>
-  	<p class="fest"> Khanifest</p>
+  	<p class="fest"> '.$one['fest'].'</p>
   	<p>'.$one['description'].'</p>
   </div>
   </figcaption>
@@ -27,8 +27,5 @@ if($id==$num) break;
    }
 
  }
-
-
-
 
 ?>

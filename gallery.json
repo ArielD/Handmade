@@ -1,12 +1,13 @@
 
 {
 
-         "selty":{
-             "name": "Selty",
+         "icequeen":{
+             "name": "Ice Queen",
               "small_url": "img/small_overalls.jpg",
-              "url": "primer",
-              "date": "00.00.00",
-              "description": "Текст текст текст",
+              "url": "img/small_overalls.jpg",
+              "date": "22.09.2017",
+              "description": "Пошив костюма, крафт сапоги",
+              "fest": "Akihabara",
               "id": "1",
               "pic": "9"
 
@@ -15,45 +16,54 @@
          "naruto":{
              "name": "Naruto",
               "small_url": "img/small_overalls.jpg",
-              "url": "primer",
+              "url": "img/overalls.jpg",
               "date": "00",
               "description": "",
+              "fest": "",
               "id": "2",
               "pic": "10"
          },
+
          "izaya":{
              "name": "izaya",
               "small_url": "img/small_overalls.jpg",
-              "url": "primer",
+              "url": "img/overalls.jpg",
               "date": "00",
               "description": "",
+              "fest": "",
               "id": "3",
               "pic": "11"
          },
+
          "shizou":{
              "name": "shizou",
               "small_url": "img/small_overalls.jpg",
-              "url": "primer",
+              "url": "img/overalls.jpg",
               "date": "00",
               "description": "",
+              "fest": "",
               "id": "4",
               "pic": "12"
          },
+
          "natsu":{
              "name": "natsu",
               "small_url": "img/small_overalls.jpg",
-              "url": "primer",
+              "url": "img/overalls.jpg",
               "date": "00",
               "description": "",
+              "fest": "",
               "id": "5",
               "pic": "13"
          },
+
          "lucy":{
              "name": "lucy",
-              "small_url": "img/small_overalls.jpg",
-              "url": "primer",
+              "small_url": "img/small_lucy.jpg",
+              "url": "img/lucy.jpg",
               "date": "00",
               "description": "",
+              "fest": "",
               "id": "6",
               "pic": "14"
          }

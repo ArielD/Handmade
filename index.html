@@ -9,6 +9,8 @@
 <link rel="stylesheet"  type="text/css" href="animate.min.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="yandex-verification" content="92c1edef56f4a4aa" />
+<meta name="Robots" content="all">
+<META NAME="keywords" CONTENT="handmade, cosplay, косплей, аниме, anime, рукоделие, юлия панасовская">
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
 <script type="text/javascript" src="js/jquery.activechange.js"></script>
@@ -28,7 +30,7 @@ $(function() {
    $("#load div").click(function(){ //Выполняем если по кнопке кликнули
    $("#imgLoad").show(); //Показываем прелоадер
    $.ajax({
-          url: "galleryPick.php",
+          url: "galleryVisible.php",
           type: "POST",
           data: {"num": num},
           cache: false,
@@ -37,7 +39,6 @@ $(function() {
                  alert("Больше нет записей");
                  $("#imgLoad").hide();
               }else{
-                // $("#content").empty()
                  $("#gallery").append(response);
                  num = num + 4;
                  $("#imgLoad").hide();
@@ -45,52 +46,45 @@ $(function() {
            }
         });
 
-        // $.ajax({
-        //        url: "galleryPick.php",
-        //        type: "POST",
-        //        data: {"num": num},
-        //        cache: false,
-        //        success: function(response){
-        //            if(response == 0){  // смотрим ответ от сервера и выполняем соответствующее действие
-        //               alert("Больше нет записей");
-        //               $("#imgLoad").hide();
-        //            }else{
-        //               $("#content").append(response);
-        //               num = num + 5;
-        //               $("#imgLoad").hide();
-        //            }
-        //         }
-        //      });
+        $.ajax({
+               url: "galleryInvisible.php",
+               type: "POST",
+               data: {"num": num},
+               cache: false,
+               success: function(response){
+                      $("#invisible_gallery").append(response);
+                   }
+
+             });
     });
 });
 </script>
-<style type="text/css">
 
-/*.commentBlock{
-  width:500px;
-  margin: 10px auto;
-  border-bottom:1px solid #999;
-}
-.name{
-  font-weight:700;
-}
+<style media="screen">
 #load{
-  width:120px;
-  height:30px;
-  text-align:center;
-  margin: 10px auto;
+  position: relative;
+  z-index: 2;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
+
 #load div{
-   margin: 5px;
-   cursor:pointer;
-   background: #6483aa;
-   color:#fff;
-   padding: 4px 10px 4px 10px;
-   border:1px solid #2f4561;
-   -webkit-border-radius: 2px;
-   -moz-border-radius: 2px;
-   border-radius: 2px;
-}*/
+  position: relative;
+  display: block;
+	margin: 0 auto;
+	height: 50px;
+	width: 300px;
+	color: var(--white);
+  text-align:center;
+	background-color: #9c2e31;
+	border: 0;
+  line-height: 37pt;
+	font-size: 18pt;
+	font-family: 'Volkhov', serif;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 1px #1a1a1a;
+  cursor: pointer;
+}
 </style>
 
 <style>
@@ -279,18 +273,15 @@ $(function() {
 </figcaption>
 </figure>
 </label>
- <!-- <div id="content">
-
-</div> -->
 
 </div>
+
 <div id="load">
-<div>Загрузить еще</div>
-<img src="loading.gif" id="imgLoad">
+<div class="load_button">Показать еще</div>
 </div>
 
 
-<div>
+<div id="invisible_gallery">
 <input type="checkbox" id="pic-1"/>
 <label for="pic-1" class="lightbox"><div class="bg"> <img src="img/overalls.jpg"/> </div></label>
 <input type="checkbox" id="pic-2"/>
