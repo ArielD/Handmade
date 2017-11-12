@@ -703,6 +703,16 @@ left: -9999px;
 	min-height: 360px;
 }
 
+.wrap-for-order {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+}
+
+.wrap-for-input {
+display: block;
+}
+
 .order-form-element {
 	margin: 5px 5px;
 	height: 50px;
@@ -716,12 +726,13 @@ left: -9999px;
 }
 
 textarea.order-form-element {
-	width: 280px;
+	width: 900px;
 	height: 155px;
 	padding: 10px;
 	color: rgba(0,0,0, 0.6);
 	font-family: 'Lato', sans-serif;
 	margin-right: 10px;
+	font-size: 13pt;
 }
 
 button.order-form-element {
@@ -735,7 +746,6 @@ button.order-form-element {
 	left: 50%;
 	width: 300px;
 	margin-left: -150px;
-
 }
 
 input.order-form-element[placeholder] {
@@ -1107,7 +1117,7 @@ input[type="text"]::-moz-placeholder {
 .footer-tel {
 	grid-area: tel;
 	justify-self: center;
-	font-size: 13pt;
+	font-size: 11pt;
 	opacity: 0.9;
 
 }
