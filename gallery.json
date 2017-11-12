@@ -1,71 +1,72 @@
 
 {
 
-         "icequeen":{
+         "icequeen_steam":{
              "name": "Ice Queen",
-              "small_url": "img/small_overalls.jpg",
-              "url": "img/small_overalls.jpg",
+              "small_url": "img/small_icequeensteam.jpg",
+              "url": "img/icequeensteam.jpg",
               "date": "22.09.2017",
-              "description": "Пошив костюма, крафт сапоги",
+              "description": "Пошив костюма. Крафт сапог, короны.",
               "fest": "Akihabara",
               "id": "1",
               "pic": "9"
 
       },
 
-         "naruto":{
-             "name": "Naruto",
-              "small_url": "img/small_overalls.jpg",
-              "url": "img/overalls.jpg",
-              "date": "00",
-              "description": "",
-              "fest": "",
+         "fionna_steam":{
+             "name": "Fionna the Human",
+              "small_url": "img/small_fionnasteam.jpg",
+              "url": "img/fionnasteam.jpg",
+              "date": "22.09.2017",
+              "description": "Пошив корсета, юбки.",
+              "fest": "Akihabara",
               "id": "2",
               "pic": "10"
          },
 
-         "izaya":{
-             "name": "izaya",
-              "small_url": "img/small_overalls.jpg",
-              "url": "img/overalls.jpg",
-              "date": "00",
-              "description": "",
-              "fest": "",
+         "fionna":{
+             "name": "Fionna the Human",
+              "small_url": "img/small_fionna.jpg",
+              "url": "img/fionna.jpg",
+              "date": "22.09.2017",
+              "description": "Пошив юбки. Крафт меча.",
+              "fest": "Akihabara",
               "id": "3",
               "pic": "11"
          },
 
-         "shizou":{
-             "name": "shizou",
-              "small_url": "img/small_overalls.jpg",
-              "url": "img/overalls.jpg",
-              "date": "00",
-              "description": "",
-              "fest": "",
+         "cake":{
+             "name": "Cake",
+              "small_url": "img/small_cake.jpg",
+              "url": "img/cake.jpg",
+              "date": "22.09.2017",
+              "description": "Пошив костюма.",
+              "fest": "Akihabara",
               "id": "4",
               "pic": "12"
          },
 
-         "natsu":{
-             "name": "natsu",
-              "small_url": "img/small_overalls.jpg",
-              "url": "img/overalls.jpg",
-              "date": "00",
-              "description": "",
-              "fest": "",
+         "flame_prince_steam":{
+             "name": "Flame Prince",
+              "small_url": "img/small_flamesteam.jpg",
+              "url": "img/flamesteam.jpg",
+              "date": "22.09.2017",
+              "description": "Пошив костюма.",
+              "fest": "Akihabara",
               "id": "5",
               "pic": "13"
          },
 
-         "lucy":{
-             "name": "lucy",
-              "small_url": "img/small_lucy.jpg",
-              "url": "img/lucy.jpg",
-              "date": "00",
-              "description": "",
-              "fest": "",
+         "gumball_steam":{
+             "name": "Prince Gumball",
+              "small_url": "img/small_gumballsteam.jpg",
+              "url": "img/gumballsteam.jpg",
+              "date": "22.09.2017",
+              "description": "Пошив костюма. Крафт короны.",
+              "fest": "Akihabara",
               "id": "6",
               "pic": "14"
          }
+
 
 }
