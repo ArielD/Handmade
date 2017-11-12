@@ -1084,8 +1084,8 @@ display: none;
 .footer-tel {
 text-align: center;
 margin: 5px;
-	font-size: 13pt;
-	opacity: 0.9;
+font-size: 11pt;
+opacity: 0.9;
 
 }
 
@@ -1113,6 +1113,7 @@ text-align: center;
 	height: 20px;
 	margin-bottom: -5px;
 	opacity: 0.8;
+	transform: scale(0.9);
 }
 
 .footer-social {
@@ -1451,6 +1452,31 @@ text-align: center;
 		height: auto;
 	}
 }
+#load{
+  position: relative;
+  z-index: 2;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#load div{
+  position: relative;
+  display: block;
+	margin: 0 auto;
+	height: 50px;
+	width: 300px;
+	color: #fff;
+  text-align:center;
+	background-color: #9c2e31;
+	border: 0;
+  line-height: 37pt;
+	font-size: 18pt;
+	font-family: 'Volkhov', serif;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 1px #1a1a1a;
+  cursor: pointer;
+}
+
 @media screen and (max-width:660px) {
 	.wrap-for-circles {
 		display: flex;
@@ -1460,6 +1486,12 @@ text-align: center;
 		justify-content: center;
 
 	}
+
+	#load div{
+		width: 250px;
+
+	}
+
 	#logo {
 		font-size: 28pt;
 		letter-spacing: 1px;

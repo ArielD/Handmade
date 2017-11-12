@@ -380,6 +380,31 @@ nav a.active {
 	overflow-y: hidden;
 }
 
+#load{
+  position: relative;
+  z-index: 2;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#load div{
+  position: relative;
+  display: block;
+	margin: 0 auto;
+	height: 50px;
+	width: 300px;
+	color: var(--white);
+  text-align:center;
+	background-color: #9c2e31;
+	border: 0;
+  line-height: 37pt;
+	font-size: 18pt;
+	font-family: 'Volkhov', serif;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 1px #1a1a1a;
+  cursor: pointer;
+}
+
 .lightbox .bg {
 	background-color: rgba(0,0,0, 0.95);
 	position: fixed;
