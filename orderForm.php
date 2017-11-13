@@ -1,7 +1,7 @@
 ﻿<?php
 if($_POST)
     {
-    $to = "pannayulia@rambler.ru"; //куда отправлять письмо
+    $to = "yulia8stark@gmail.com"; //куда отправлять письмо
     $subject = "Заказ"; //тема
     $message = '<span style="font-weight:bold;color:#000;font-size:18px;">Юльк, хочуть шось замовити</span><br><br>
     Имя: <span style="font-weight:bold;color:#000;">'.$_POST['name-order'].'</span><br>
