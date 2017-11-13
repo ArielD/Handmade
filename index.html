@@ -68,7 +68,7 @@
   </header>
 
    <div class="grid-about" id="about">
-
+      <div class="wrap-for-about">
       <div class="grid-about-wrap">
         <div class="grid-about-photo">
           <img src="img/photo.jpg">
@@ -79,11 +79,12 @@
           <div class="grid-about-bottom">С радостью помогу Вам блистать на фестивалях и фотосессиях!</div>
         </div>
       </div>
+    </div>
 
     <div class="grid-circles" id="circles">
       <div class="bg-for-circles"></div>
+      <div class="circles-wrap">
       <div class="wrap-for-circles">
-
         <div class="grid-circles-img grid-circles-left-img">
           <img  src="img/seba.png">
           <div class="circles-img-descr">Выполнение любой прихоти</div>
@@ -98,12 +99,11 @@
           <img src="img/william.png">
           <div class="circles-img-descr">Ответсвенный подход к работе</div>
         </div>
-
+      </div>
       </div>
     </div>
-
   </div>
-
+<div id="wrap-for-gallery">
   <div class="grid-gallery" id="gallery">
 
     <label for="pic-1" class="grid-gallery-element">
@@ -217,7 +217,7 @@
         </figcaption>
       </figure>
     </label>
-
+</div>
   </div>
 
   <div id="load">
@@ -248,6 +248,7 @@
     <div class="bg-for-order"></div>
     <div class="order-header">Заказать работу</div>
 
+    <div class="wrap-for-order">
     <div class="grid-order-block">
       <div class="order-block grid-order-left">
         <header>Крафт
@@ -283,6 +284,7 @@
         <button class="order-button-element">Заказать</button>
       </div>
     </div>
+    </div>
 
     <div class="order-form order-form-hide" >
       <div class="order-form-wrap">
@@ -306,6 +308,7 @@
 
   <div class="grid-review" id="review">
     <div class="review-header">Отзывы</div>
+    <div class="wrap-for-review">
       <div class="grid-review-block">
         <div class="grid-review-block-left">
           <div class="grid-review-block-left-first">
@@ -335,7 +338,7 @@
         </div>
       </div>
       </div>
-
+    </div>
     <div class="review-form review-form-hide" >
       <div class="review-form-wrap"> <div onClick="cancelFunc()" class="cancel"></div>
         <form id="form-review" action="javascript:void(null);" onsubmit="callReview()" method="POST">
@@ -370,9 +373,11 @@
       </div>
     </div>
   </div>
-
   </div>
+
     <footer class="grid-footer">
+      <div class="bg-for-footer"></div>
+      <div class="wrap-for-footer">
       <div class="footer-img"><img src="img/photo_footer.jpg" ></div>
       <div class="footer-name">Юлия Панасовская</div>
       <div class="footer-tel-descr">Телефон</div>
@@ -392,6 +397,7 @@
         <div>pannayulia@rambler.ru</div>
       </div>
       <div id="footer-copyright">Made with <span id="footer-heart"><img src="img/heart.png"></span> for my dear friend Yulia Panasovska. &copy 2017</div>
+      </div>
     </footer>
   </div>
 </body>

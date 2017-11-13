@@ -35,7 +35,8 @@ h2::selection,
 button::selection,
 header::selection,
 input::selection,
-textarea::selection    {
+textarea::selection,
+br::selection    {
 	color: var(--white);
 	background: var(--scarlet-light);
 }
@@ -86,6 +87,7 @@ header.grid-header {
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: 0px 100vh auto auto auto auto auto  auto 200px;
+	position: relative;
 }
 
 .social a {
@@ -195,6 +197,21 @@ nav a.active {
 	display: grid;
 	background-color: #fffbff;
 	grid-template-columns: 400px 1fr;
+	position: relative;
+}
+
+.grid-about-wrap {
+	position: relative;
+	left: 0;
+	right: 0;
+	max-width: 1500px;
+	margin: 0 auto;
+	overflow: auto;
+}
+
+.wrap-for-about {
+	position: relative;
+	display: block;
 }
 
 .grid-about-photo {
@@ -283,14 +300,27 @@ nav a.active {
 	justify-content: space-around;
 }
 
+.circles-wrap {
+	position: relative;
+	display: block;
+}
+
+.wrap-for-circles {
+	position: relative;
+	left: 0;
+	right: 0;
+	max-width: 1500px;
+	margin: 0 auto;
+	overflow: auto;
+}
 
 .bg-for-circles {
 	background: #581518;
 	z-index: 1;
 	width: 100wv;
-	height: 250px;
+	height: 270px;
 	clip-path: polygon(0 100%, 100% 20%, 100% 0, 0 0);
-	margin-bottom: -210px;
+	margin-bottom: -250px;
 	position: relative;
 }
 
@@ -312,6 +342,7 @@ nav a.active {
 	background-position: top center;
 	-webkit-flex-basis: 270px;
 	flex-basis: 270px;
+	overflow: hidden;
 }
 
 .grid-circles-img:hover .circles-img-descr {
@@ -338,11 +369,24 @@ nav a.active {
 	background-color: #fffbff;
 }
 
+#gallery {
+	position: relative;
+	left: 0;
+	right: 0;
+	max-width: 1500px;
+	margin: 0 auto;
+	overflow: auto;
+}
+
+#wrap-for-gallery {
+	position: relative;
+	display: block;
+}
+
 .grid-gallery-element {
  	/*width: 350px;
 	height: 230px;*/
 	overflow: hidden;
-
 }
 
 .small-img {
@@ -573,7 +617,18 @@ figure.gallery-effect:hover p {
 	display: grid;
 	grid-template-columns: repeat(3, auto);
 	position: relative;
+	position: relative;
+	left: 0;
+	right: 0;
+	max-width: 1400px;
+	margin: 0 auto;
 
+}
+
+
+.wrap-for-order {
+	position: relative;
+	display: block;
 }
 
 .order-header {
@@ -798,6 +853,21 @@ input.order-form-element[type="text"]::-moz-placeholder {
 	grid-template-columns: 50% 50%;
 	grid-template-rows: 50% 50%;
 
+}
+
+.grid-review-block {
+	position: relative;
+	left: 0;
+	right: 0;
+	max-width: 1500px;
+	margin: 0 auto;
+
+}
+
+
+.wrap-for-review {
+	position: relative;
+	display: block;
 }
 
 .grid-review-block-left-first,
@@ -1050,7 +1120,20 @@ input[type="text"]::-moz-placeholder {
 /* ----------------- GRID FOOTER --------------------- */
 
 .grid-footer {
+	position: relative;
+	display: block;
+}
+
+.bg-for-footer {
 	background-color: #1c1c1c;
+	width: 100%;
+	position: relative;
+	height: 200px;
+}
+
+
+.wrap-for-footer {
+	/*background-color: #1c1c1c;*/
 	display: grid;
 	grid-template-columns: 20% 30% 15% 35%;
 	grid-template-rows: auto auto auto;
@@ -1061,6 +1144,12 @@ input[type="text"]::-moz-placeholder {
 	"footer footer footer footer";
 	padding-top: 15px;
 	justify-content: center;
+	position: relative;
+	left: 0;
+	right: 0;
+	max-width: 1500px;
+	margin: 0 auto;
+	margin-top: -200px;
 }
 
 .current a {

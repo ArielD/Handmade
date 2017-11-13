@@ -14,7 +14,7 @@
       },
 
          "fionna_steam":{
-             "name": "Fionna the Human",
+             "name": "Fionna",
               "small_url": "img/small_fionnasteam.jpg",
               "url": "img/fionnasteam.jpg",
               "date": "22.09.2017",
@@ -25,7 +25,7 @@
          },
 
          "fionna":{
-             "name": "Fionna the Human",
+             "name": "Fionna",
               "small_url": "img/small_fionna.jpg",
               "url": "img/fionna.jpg",
               "date": "22.09.2017",
