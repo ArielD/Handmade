@@ -191,6 +191,10 @@ nav a.active {
 	color: var(--scarlet-light);
 }
 
+nav a.non-active {
+	color: #fff;
+}
+
 /* ----------------- GRID ABOUT --------------------- */
 
 .grid-about-wrap {
